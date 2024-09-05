@@ -35,3 +35,37 @@ class PiCoinSmartContract:
     def decrease_allowance(self, owner, spender, amount):
         tx_hash = self.contract.functions.decreaseAllowance(spender, amount).transact({'from': owner})
         return tx_hash
+
+    def get_total_supply(self):
+        return self.contract.functions.totalSupply().call()
+
+    def get_owner(self):
+        return self.contract.functions.owner().call()
+
+    def renounce_ownership(self):
+        tx_hash = self.contract.functions.renounceOwnership().transact({'from': self.get_owner()})
+        return tx_hash
+
+    def transfer_ownership(self, new_owner):
+        tx_hash = self.contract.functions.transferOwnership(new_owner).transact({'from': self.get_owner()})
+        return tx_hash
+
+    def pause(self):
+        tx_hash = self.contract.functions.pause().transact({'from': self.get_owner()})
+        return tx_hash
+
+    def unpause(self):
+        tx_hash = self.contract.functions.unpause().transact({'from': self.get_owner()})
+        return tx_hash
+
+    def is_paused(self):
+        return self.contract.functions.paused().call()
+
+    def get_name(self):
+        return self.contract.functions.name().call()
+
+    def get_symbol(self):
+        return self.contract.functions.symbol().call()
+
+    def get_decimals(self):
+        return self.contract.functions.decimals().call()
