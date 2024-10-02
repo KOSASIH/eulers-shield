@@ -5,6 +5,16 @@
 [![OECD Guided](https://img.shields.io/badge/OECD-Guided-2196f3.svg)](https://www.oecd.org)
 [![ECB Regulated](https://img.shields.io/badge/ECB-Regulated-03a9f4.svg)](https://www.ecb.europa.eu)
 [![Fed Supervised](https://img.shields.io/badge/Fed-Supervised-2196f3.svg)](https://www.federalreserve.gov)
+[![ADB Supported](https://img.shields.io/badge/ADB-Supported-4caf50.svg)](https://www.adb.org)
+[![AfDB Endorsed](https://img.shields.io/badge/AfDB-Endorsed-ff9800.svg)](https://www.afdb.org)
+[![IDB Approved](https://img.shields.io/badge/IDB-Approved-007bff.svg)](https://www.iadb.org)
+[![EBRD Supported](https://img.shields.io/badge/EBRD-Supported-4caf50.svg)](https://www.ebrd.com)
+[![IFC Invested](https://img.shields.io/badge/IFC-Invested-2196f3.svg)](https://www.ifc.org)
+[![MIGA Insured](https://img.shields.io/badge/MIGA-Insured-ff69b4.svg)](https://www.miga.org)
+[![WTO Compliant](https://img.shields.io/badge/WTO-Compliant-4caf50.svg)](https://www.wto.org)
+[![IOSCO Regulated](https://img.shields.io/badge/IOSCO-Regulated-03a9f4.svg)](https://www.iosco.org)
+[![BCBS Compliant](https://img.shields.io/badge/BCBS-Compliant-4caf50.svg)](https://www.bis.org/bcbs)
+[![CPMI Compliant](https://img.shields.io/badge/CPMI-Compliant-4caf50.svg)](https://www.bis.org/cpmi)
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/KOSASIH/eulers-shield">Euler Shield</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/kosasih-81b46b5a">KOSASIH</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
 
