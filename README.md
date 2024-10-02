@@ -16,6 +16,11 @@
 [![BCBS Compliant](https://img.shields.io/badge/BCBS-Compliant-4caf50.svg)](https://www.bis.org/bcbs)
 [![CPMI Compliant](https://img.shields.io/badge/CPMI-Compliant-4caf50.svg)](https://www.bis.org/cpmi)
 
+[![Pi Network](https://img.shields.io/badge/Pi%20Network-Pi%20Network-blue.svg)](https://minepi.com/)
+[![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-RPi-red.svg)](https://www.raspberrypi.com/)
+[![Raspberry Pi Zero](https://img.shields.io/badge/Raspberry%20Pi%20Zero-RPi%20Zero-green.svg)](https://www.raspberrypi.com/products/raspberry-pi-zero/)
+[![Epaper Badge](https://img.shields.io/badge/Epaper%20Badge-Epaper%20Badge-orange.svg)](https://medium.com/coinmonks/building-an-epaper-badge-with-a-raspberry-pi-zero-e4b98b3311c3) 
+
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://www.ecma-international.org/ecma-262/)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
 [![Java](https://img.shields.io/badge/Java-8+-red.svg)](https://www.oracle.com/java/)
