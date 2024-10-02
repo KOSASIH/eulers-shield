@@ -16,6 +16,31 @@
 [![BCBS Compliant](https://img.shields.io/badge/BCBS-Compliant-4caf50.svg)](https://www.bis.org/bcbs)
 [![CPMI Compliant](https://img.shields.io/badge/CPMI-Compliant-4caf50.svg)](https://www.bis.org/cpmi)
 
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://www.ecma-international.org/ecma-262/)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
+[![Java](https://img.shields.io/badge/Java-8+-red.svg)](https://www.oracle.com/java/)
+[![C++](https://img.shields.io/badge/C++-11+-blue.svg)](https://www.iso.org/standard/64029.html)
+[![React](https://img.shields.io/badge/React-17.x-blue.svg)](https://reactjs.org/)
+[![Angular](https://img.shields.io/badge/Angular-12.x-red.svg)](https://angular.io/)
+[![Vue.js](https://img.shields.io/badge/Vue.js-3.x-green.svg)](https://vuejs.org/)
+
+[![AWS](https://img.shields.io/badge/AWS-Cloud-orange.svg)](https://aws.amazon.com/)
+[![Azure](https://img.shields.io/badge/Azure-Cloud-blue.svg)](https://azure.microsoft.com/)
+[![Google Cloud](https://img.shields.io/badge/Google%20Cloud-Cloud-lightblue.svg)](https://cloud.google.com/)
+[![Docker](https://img.shields.io/badge/Docker-20.x-blue.svg)](https://www.docker.com/)
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-1.x-orange.svg)](https://kubernetes.io/)
+[![Jenkins](https://img.shields.io/badge/Jenkins-2.x-blue.svg)](https://jenkins.io/)
+
+[![GDPR Compliant](https://img.shields.io/badge/GDPR-Compliant-blue.svg)](https://gdpr.eu/)
+[![HIPAA Compliant](https://img.shields.io/badge/HIPAA-Compliant-green.svg)](https://www.hhs.gov/hipaa/)
+[![PCI-DSS Compliant](https://img.shields.io/badge/PCI--DSS-Compliant-red.svg)](https://www.pcisecuritystandards.org/)
+[![ISO 27001 Certified](https://img.shields.io/badge/ISO%2027001-Certified-yellow.svg)](https://www.iso.org/iso-27001-information-security.html)
+
+[![MIT Licensed](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Apache Licensed](https://img.shields.io/badge/License-Apache%202.0-orange.svg)](https://opensource.org/licenses/Apache-2.0)
+[![GPL Licensed](https://img.shields.io/badge/License-GPL%203.0-red.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+[![Open Source](https://img.shields.io/badge/Open%20Source-Yes-green.svg)](https://opensource.org/)
+
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/KOSASIH/eulers-shield">Euler Shield</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/kosasih-81b46b5a">KOSASIH</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
 
 # eulers-shield
