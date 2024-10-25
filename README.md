@@ -110,6 +110,26 @@
 [![GPL Licensed](https://img.shields.io/badge/License-GPL%203.0-red.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 [![Open Source](https://img.shields.io/badge/Open%20Source-Yes-green.svg)](https://opensource.org/)
 
+# International Awards and Recognitions
+
+[![UNESCO World Heritage Site](https://img.shields.io/badge/UNESCO-World%20Heritage%20Site-ffcc00.svg)](https://whc.unesco.org)
+[![UNESCO Creative Cities](https://img.shields.io/badge/UNESCO-Creative%20Cities-4caf50.svg)](https://en.unesco.org/creative-cities)
+[![UNICEF Child Friendly City](https://img.shields.io/badge/UNICEF-Child%20Friendly%20City-007bff.svg)](https://www.unicef.org)
+[![WHO Healthy City](https://img.shields.io/badge/WHO-Healthy%20City-ff9800.svg)](https://www.who.int)
+[![FAO Food for the Future Award](https://img.shields.io/badge/FAO-Food%20for%20the%20Future%20Award-2196f3.svg)](https://www.fao.org)
+[![ISO Certification](https://img.shields.io/badge/ISO-Certified-4caf50.svg)](https://www.iso.org)
+[![Green Globe Certification](https://img.shields.io/badge/Green%20Globe-Certified-007bff.svg)](https://www.greenglobe.com)
+[![Global Green Award](https://img.shields.io/badge/Global%20Green%20Award-2023-ff9800.svg)](https://www.globalgreen.org)
+[![UNESCO Literacy Prize](https://img.shields.io/badge/UNESCO-Literacy%20Prize-4caf50.svg)](https://en.unesco.org/literacyprize)
+[![UNESCO International Literacy Award](https://img.shields.io/badge/UNESCO-International%20Literacy%20Award-2196f3.svg)](https://en.unesco.org/literacyprize)
+[![UNESCO Memory of the World Register](https://img.shields.io/badge/UNESCO-Memory%20of%20the%20World-ff69b4.svg)](https://en.unesco.org/programme/mow)
+[![UNESCO Global Geopark](https://img.shields.io/badge/UNESCO-Global%20Geopark-4caf50.svg)](https://en.unesco.org/global-geoparks)
+[![UNESCO Man and the Biosphere Programme](https://img.shields.io/badge/UNESCO-Man%20and%20the%20Biosphere-007bff.svg)](https://en.unesco.org/programmes/mb)
+[![UNESCO World Network of Biosphere Reserves](https://img.shields.io/badge/UNESCO-World%20Network%20of%20Biosphere%20Reserves-ff9800.svg)](https://en.unesco.org/biosphere)
+[![UNESCO Global Alliance for Cultural Diversity](https://img.shields.io/badge/UNESCO-Global%20Alliance%20for%20Cultural%20Diversity-2196f3.svg)](https://en.unesco.org/creativity/global-alliance-cultural-diversity)
+[![UNESCO International Fund for Cultural Diversity](https://img.shields.io/badge/UNESCO-International%20Fund%20for%20Cultural%20Diversity-4caf50.svg)](https://en.unesco.org/creativity/ifcd)
+[![UNESCO Global Education Coalition](https://img.shields.io/badge/UNESCO-Global%20Education%20Coalition-ff9800.svg)](https://en.unesco.org/covid19/educationresponse/globaleducationcoalition)
+
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/KOSASIH/eulers-shield">Euler Shield</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/kosasih-81b46b5a">KOSASIH</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
 
 # eulers-shield
