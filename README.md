@@ -163,6 +163,17 @@
 [![UNESCO Global Alliance for Cultural Diversity](https://img.shields.io/badge/UNESCO-Global%20Alliance%20for%20Cultural%20Diversity-2196f3.svg)](https://en.unesco.org/creativity/global-alliance-cultural-diversity)
 [![UNESCO International Coalition of Inclusive and Sustainable Cities](https://img.shields.io/badge/UNESCO-ICCAR-4caf50.svg)](https://en.unesco.org/coalition-inclusive-cities)
 
+[![Certified Regulatory Compliance Manager (CRCM)](https://img.shields.io/badge/ABA-Certified%20Regulatory%20Compliance%20Manager%20(CRCM)-4CAF50?style=for-the-badge)](https://www.aba.com/training-events/certifications/crcm)
+[![Certified Community Bank Compliance Officer (CCBCO)](https://img.shields.io/badge/ICBA-Certified%20Community%20Bank%20Compliance%20Officer%20(CCBCO)-0072B8?style=for-the-badge)](https://www.icba.org/)
+[![Certified Anti-Money Laundering Specialist (CAMS)](https://img.shields.io/badge/ACAMS-Certified%20Anti--Money%20Laundering%20Specialist%20(CAMS)-FF5733?style=for-the-badge)](https://www.acams.org/)
+[![Certified Information Systems Auditor (CISA)](https://img.shields.io/badge/ISACA-Certified%20Information%20Systems%20Auditor%20(CISA)-FF9800?style=for-the-badge)](https://www.isc2.org/)
+[![Certified Internal Auditor (CIA)](https://img.shields.io/badge/IIA-Certified%20Internal%20Auditor%20(CIA)-4CAF50?style=for-the-badge)](https://www.theiia.org/)
+[![Certified Risk Management Professional (CRMP)](https://img.shields.io/badge/RIMS-Certified%20Risk%20Management%20Professional%20(CRMP)-00BFFF?style=for-the-badge)](https://www.rims.org/)
+[![Certified Financial Planner (CFP)](https://img.shields.io/badge/CFP%20Board-Certified%20Financial%20Planner%20(CFP)-FF5733?style=for-the-badge)](https://www.cfp.net/)
+[![Certified Fraud Examiner (CFE)](https://img.shields.io/badge/ACFE-Certified%20Fraud%20Examiner%20(CFE)-8E44AD?style=for-the-badge)](https://www.acfe.com/)
+[![Certified Information Privacy Professional (CIPP)](https://img.shields.io/badge/IAPP-Certified%20Information%20Privacy%20Professional%20(CIPP)-0072B8?style=for-the-badge)](https://iapp.org/)
+[![Certified Data Protection Officer (CDPO)](https://img.shields.io/badge/IAPP-Certified%20Data%20Protection%20Officer%20(CDPO)-FF9800?style=for-the-badge)](https://iapp.org/)
+
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/KOSASIH/eulers-shield">Euler Shield</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/kosasih-81b46b5a">KOSASIH</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
 
 # eulers-shield
