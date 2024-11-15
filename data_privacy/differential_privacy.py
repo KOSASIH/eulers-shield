@@ -1,22 +1,30 @@
 import numpy as np
 
-def add_laplace_noise(data, epsilon):
-    """Adds Laplace noise to data for differential privacy."""
-    sensitivity = 1  # Assuming sensitivity of 1 for your data
-    scale = sensitivity / epsilon
-    noise = np.random.laplace(scale=scale)
-    return data + noise
+class DifferentialPrivacy:
+    def __init__(self, epsilon):
+        """Initialize the differential privacy mechanism with a given epsilon."""
+        self.epsilon = epsilon
+
+    def add_noise(self, data):
+        """Add Laplace noise to the data for differential privacy."""
+        sensitivity = self.calculate_sensitivity(data)
+        noise = np.random.laplace(0, sensitivity / self.epsilon, size=len(data))
+        return data + noise
+
+    def calculate_sensitivity(self, data):
+        """Calculate the sensitivity of the data."""
+        # For simplicity, we assume the sensitivity is 1 for each entry
+        return 1
 
 # Example Usage:
 if __name__ == "__main__":
-    # Original data (example: number of users in each city)
-    original_data = np.array([100, 250, 150, 300]) 
+    # Sample data
+    data = np.array([100, 200, 300, 400, 500])
 
-    # Privacy parameter (epsilon)
-    epsilon = 1.0
+    # Initialize differential privacy with epsilon = 0.5
+    dp = DifferentialPrivacy(epsilon=0.5)
 
-    # Add Laplace noise
-    noisy_data = add_laplace_noise(original_data, epsilon)
-
-    print("Original data:", original_data)
-    print("Noisy data:", noisy_data)
+    # Add noise to the data
+    private_data = dp.add_noise(data)
+    print("Original data:", data)
+    print("Private data with noise:", private_data)
