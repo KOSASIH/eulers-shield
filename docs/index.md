@@ -21,6 +21,3 @@ Welcome to the documentation for Eulers Shield, a Python-based tool designed to 
 * [Contributing to Eulers Shield](contributing.md)
 * [Changelog](changelog.md)
 
-## Contact
-
-For any questions or feedback, please reach out to [Your Contact Information].
