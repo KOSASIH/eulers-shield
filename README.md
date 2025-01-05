@@ -210,7 +210,7 @@ Designed to handle high transaction volumes, Euler's Shield ensures the Pi Coin 
 
 1. **Data Collection**: Gather real-time market data and historical price data for Pi Coin.
 2. **Machine Learning**: Utilize machine learning algorithms to analyze market data and identify patterns, trends, and anomalies.
-3. **Price Adjustment**: Based on the analysis, adjust the supply of Pi Coin to maintain a stable price of $314.159.
+3. **Price Adjustment**: Based on the analysis, adjust the supply of Pi Coin to maintain a stable price of $314.159 ( Three hundred fourteen thousand one hundred fifty-nine dollars ).
 4. **Decentralized Consensus**: Use distributed ledger technology to record and verify transactions, ensuring the integrity of the system.
 5. **Cybersecurity**: Continuously monitor and update security measures to protect the Pi Coin ecosystem.
 
