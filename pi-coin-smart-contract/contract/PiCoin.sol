@@ -1,99 +1,86 @@
-// PiCoin.sol
+uint256 public constant INITIAL_SUPPLY = 100_000_000_000 * 10 ** 18; // Total supply with decimals
+uint256 public constant STABLE_VALUE = 314159 * 10 ** 18; // Stable value in wei
 
-pragma solidity ^0.8.0;
+// Multi-signature wallet addresses
+address[] public multiSigWallets;
+uint256 public requiredSignatures;
 
-import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/ownership/Ownable.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/lifecycle/Pausable.sol";
+event SupplyAdjusted(uint256 newSupply);
+event MultiSigWalletAdded(address wallet);
+event MultiSigWalletRemoved(address wallet);
 
-contract PiCoin is Ownable, Pausable {
-    string public name = "Pi Coin";
-    string public symbol = "π";
-    uint8 public decimals = 18;
+modifier onlyMultiSig() {
+    require(isMultiSig(msg.sender), "Not authorized");
+    _;
+}
 
-    uint256 public totalSupply;
+constructor() ERC20("Pi Coin", "Pi") {
+    _mint(msg.sender, INITIAL_SUPPLY);
+    multiSigWallets.push(msg.sender); // Add deployer as initial multi-sig wallet
+    requiredSignatures = 2; // Set required signatures for multi-sig
+}
 
-    mapping (address => uint256) public balances;
-    mapping (address => mapping (address => uint256)) public allowed;
+function initialize(address[] memory _multiSigWallets, uint256 _requiredSignatures) public initializer {
+    require(_multiSigWallets.length >= _requiredSignatures, "Not enough wallets");
+    multiSigWallets = _multiSigWallets;
+    requiredSignatures = _requiredSignatures;
+}
 
-    event Transfer(address indexed from, address indexed to, uint256 value);
-    event Approval(address indexed owner, address indexed spender, uint256 value);
+function transfer(address recipient, uint256 amount) public override whenNotPaused returns (bool) {
+    require(amount > 0, "Invalid transfer value");
+    return super.transfer(recipient, amount);
+}
 
-    constructor() public {
-        totalSupply = 100000000 * (10 ** decimals);
-        balances[msg.sender] = totalSupply;
+function approve(address spender, uint256 amount) public override whenNotPaused returns (bool) {
+    require(amount > 0, "Invalid approval value");
+    return super.approve(spender, amount);
+}
+
+function adjustSupply(uint256 newSupply) external onlyMultiSig {
+    require(newSupply > 0, "Invalid supply value");
+    _mint(address(this), newSupply.sub(totalSupply()));
+    emit SupplyAdjusted(newSupply);
+}
+
+function isMultiSig(address wallet) internal view returns (bool) {
+    for (uint256 i = 0; i < multiSigWallets.length; i++) {
+        if (multiSigWallets[i] == wallet) {
+            return true;
+        }
     }
+    return false;
+}
 
-    function transfer(address _to, uint256 _value) public whenNotPaused returns (bool) {
-        require(_to != address(0), "Invalid recipient address");
-        require(_value > 0, "Invalid transfer value");
-        require(balances[msg.sender] >= _value, "Insufficient balance");
+function addMultiSigWallet(address wallet) external onlyOwner {
+    require(!isMultiSig(wallet), "Wallet already exists");
+    multiSigWallets.push(wallet);
+    emit MultiSigWalletAdded(wallet);
+}
 
-        balances[msg.sender] -= _value;
-        balances[_to] += _value;
-
-        emit Transfer(msg.sender, _to, _value);
-        return true;
+function removeMultiSigWallet(address wallet) external onlyOwner {
+    require(isMultiSig(wallet), "Wallet does not exist");
+    for (uint256 i = 0; i < multiSigWallets.length; i++) {
+        if (multiSigWallets[i] == wallet) {
+            multiSigWallets[i] = multiSigWallets[multiSigWallets.length - 1];
+            multiSigWallets.pop();
+            emit MultiSigWalletRemoved(wallet);
+            break;
+        }
     }
+}
 
-    function approve(address _spender, uint256 _value) public whenNotPaused returns (bool) {
-        require(_spender != address(0), "Invalid spender address");
-        require(_value > 0, "Invalid approval value");
+function pause() public onlyOwner {
+    _pause();
+}
 
-        allowed[msg.sender][_spender] = _value;
+function unpause() public onlyOwner {
+    _unpause();
+}
 
-        emit Approval(msg.sender, _spender, _value);
-        return true;
-    }
+function renounceOwnership() public override onlyOwner {
+    super.renounceOwnership();
+}
 
-    function transferFrom(address _from, address _to, uint256 _value) public whenNotPaused returns (bool) {
-        require(_from != address(0), "Invalid sender address");
-        require(_to != address(0), "Invalid recipient address");
-        require(_value > 0, "Invalid transfer value");
-        require(balances[_from] >= _value, "Insufficient balance");
-        require(allowed[_from][msg.sender] >= _value, "Insufficient allowance");
-
-        balances[_from] -= _value;
-        balances[_to] += _value;
-        allowed[_from][msg.sender] -= _value;
-
-        emit Transfer(_from, _to, _value);
-        return true;
-    }
-
-    function increaseAllowance(address _spender, uint256 _addedValue) public whenNotPaused returns (bool) {
-        require(_spender != address(0), "Invalid spender address");
-        require(_addedValue > 0, "Invalid increase value");
-
-        allowed[msg.sender][_spender] += _addedValue;
-
-        emit Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
-        return true;
-    }
-
-    function decreaseAllowance(address _spender, uint256 _subtractedValue) public whenNotPaused returns (bool) {
-        require(_spender != address(0), "Invalid spender address");
-        require(_subtractedValue > 0, "Invalid decrease value");
-        require(allowed[msg.sender][_spender] >= _subtractedValue, "Insufficient allowance");
-
-        allowed[msg.sender][_spender] -= _subtractedValue;
-
-        emit Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
-        return true;
-    }
-
-    function pause() public onlyOwner {
-        super.pause();
-    }
-
-    function unpause() public onlyOwner {
-        super.unpause();
-    }
-
-    function renounceOwnership() public onlyOwner {
-        super.renounceOwnership();
-    }
-
-    function transferOwnership(address newOwner) public onlyOwner {
-        super.transferOwnership(newOwner);
-    }
+function transferOwnership(address newOwner) public override onlyOwner {
+    super.transferOwnership(newOwner);
 }
