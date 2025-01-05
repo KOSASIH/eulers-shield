@@ -3,15 +3,15 @@ Euler's Shield Constants Module
 =============================
 
 This module contains essential constants and mathematical formulas
-related to Euler's Shield and Pi Coin, a stable cryptocurrency.
+related to Euler's Shield and Pi Coin, a stable digital currency.
 """
 
 # Pi Coin value (USD)
-PI_COIN_VALUE = 314.159  # Stable coin value
+PI_COIN_VALUE = 314159.00  # Fixed value of Pi Coin as a stable digital currency in USD
+# This value represents three hundred fourteen thousand one hundred fifty-nine dollars.
 
 # Pi Coin supply
 PI_COIN_SUPPLY = 100_000_000_000  # Total supply of Pi Coin
-PI_COIN_DYNAMIC_SUPPLY = True  # Enable dynamic supply adjustments based on market conditions
 
 # Euler's Number (approximation)
 EULER_NUMBER = 2.718281828459045
@@ -46,7 +46,7 @@ BLOCKCHAIN_VERSION = '1.0.0'  # Version of the blockchain
 DEBUG_MODE = False
 
 # Pi Coin precision (number of decimal places)
-PI_COIN_PRECISION = 8  # Number of decimal places for Pi Coin
+PI_COIN_PRECISION = 2  # Number of decimal places for Pi Coin
 
 # Additional constants for enhanced functionality
 MAX_TRANSACTIONS_PER_BLOCK = 1000  # Maximum number of transactions per block
