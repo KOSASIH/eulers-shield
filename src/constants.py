@@ -12,6 +12,7 @@ PI_COIN_VALUE = 314159.00  # Fixed value of Pi Coin as a stable digital currency
 
 # Pi Coin supply
 PI_COIN_SUPPLY = 100_000_000_000  # Total supply of Pi Coin
+PI_COIN_DYNAMIC_SUPPLY = True  # Enable dynamic supply adjustments based on market conditions
 
 # Euler's Number (approximation)
 EULER_NUMBER = 2.718281828459045
@@ -27,6 +28,7 @@ CRYPTO_SALT = b'\x13\x37\x42\x59'  # Random salt value
 CRYPTO_ITERATIONS = 100000  # Number of iterations for key derivation (increased for security)
 HASH_FUNCTION = 'sha3_512'  # Hash function for transaction verification (upgraded for security)
 ENCRYPTION_ALGORITHM = 'AES-256-GCM'  # Advanced encryption algorithm for securing transactions
+SIGNATURE_SCHEME = 'ECDSA'  # Elliptic Curve Digital Signature Algorithm for transaction signing
 
 # Euler's Shield algorithm parameters
 SHIELD_PRIME = 257  # Prime number for Euler's Shield
@@ -68,5 +70,13 @@ GOVERNANCE_MODEL = 'Decentralized Autonomous Organization'  # Governance model f
 ENABLE_MULTI_SIG = True  # Enable multi-signature transactions for added security
 MULTI_SIG_THRESHOLD = 2  # Number of signatures required for multi-sig transactions
 SECURITY_AUDIT_FREQUENCY = 30  # Frequency of security audits in days
+
+# Advanced Network Features
+ENABLE_SHARDING = True  # Enable sharding for improved scalability
+SHARDING_FACTOR = 4  # Number of shards in the network
+
+# Performance Optimization
+ENABLE_CACHING = True  # Enable caching for faster transaction processing
+CACHE_EXPIRATION_TIME = 3600  # Cache expiration time in seconds (1 hour)
 
 # Additional constants can be added here as needed
