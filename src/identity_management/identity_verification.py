@@ -39,7 +39,7 @@ class IdentityVerification:
     def register_identity(self, user_id, identity_data):
         """Register a new identity for a user."""
         if user_id not in self.user_identities:
-            raise ValueError("User  keys not found. Please generate keys first.")
+            raise ValueError("User keys not found. Please generate keys first.")
 
         self.user_identities[user_id]['identity_data'] = identity_data
         self.save_identities()
@@ -48,7 +48,7 @@ class IdentityVerification:
     def encrypt_data(self, user_id, data):
         """Encrypt identity data using the user's public key."""
         if user_id not in self.user_identities:
-            raise ValueError("User  keys not found. Please generate keys first.")
+            raise ValueError("User keys not found. Please generate keys first.")
 
         public_key = RSA.import_key(self.user_identities[user_id]['public_key'])
         cipher = PKCS1_OAEP.new(public_key)
@@ -58,7 +58,7 @@ class IdentityVerification:
     def decrypt_data(self, user_id, encrypted_data):
         """Decrypt identity data using the user's private key."""
         if user_id not in self.user_identities:
-            raise ValueError("User  keys not found. Please generate keys first.")
+            raise ValueError("User keys not found. Please generate keys first.")
 
         private_key = RSA.import_key(self.user_identities[user_id]['private_key'])
         cipher = PKCS1_OAEP.new(private_key)
@@ -76,7 +76,7 @@ class IdentityVerification:
     def create_verifiable_credential(self, user_id, credential_data):
         """Create a verifiable credential for a user."""
         if user_id not in self.user_identities:
-            raise ValueError("User  keys not found. Please generate keys first.")
+            raise ValueError("User keys not found. Please generate keys first.")
 
         credential_hash = hashlib.sha256(json.dumps(credential_data).encode()).hexdigest()
         return {
@@ -115,4 +115,53 @@ if __name__ == "__main__":
     encrypted_data = identity_manager.encrypt_data(user_id, json.dumps(identity_data))
     print(f"Encrypted identity data: {encrypted_data}")
 
-    decrypted
+    decrypted _data = identity_manager.decrypt_data(user_id, encrypted_data)
+    print(f"Decrypted identity data: {decrypted_data}")
+
+    # Create and verify a verifiable credential
+    credential_data = {
+        "degree": "Bachelor of Science",
+        "institution": "University of Example",
+        "year": 2023
+    }
+    credential = identity_manager.create_verifiable_credential(user_id, credential_data)
+    print(f"Created verifiable credential: {credential}")
+
+    is_valid = identity_manager.verify_credential(credential)
+    print(f"Is the credential valid? {is_valid}") ```python
+    # Continue with the example usage
+    # Generate keys for another user
+    user_id_2 = "user456"
+    public_key_2 = identity_manager.generate_keys(user_id_2)
+    print(f"Generated public key for {user_id_2}: {public_key_2}")
+
+    # Register an identity for the second user
+    identity_data_2 = {
+        "name": "Bob",
+        "age": 28,
+        "email": "bob@example.com"
+    }
+    print(identity_manager.register_identity(user_id_2, identity_data_2))
+
+    # Verify identity for the second user
+    verified_identity_2 = identity_manager.verify_identity(user_id_2)
+    print(f"Verified identity data for {user_id_2}: {verified_identity_2}")
+
+    # Encrypt and decrypt identity data for the second user
+    encrypted_data_2 = identity_manager.encrypt_data(user_id_2, json.dumps(identity_data_2))
+    print(f"Encrypted identity data for {user_id_2}: {encrypted_data_2}")
+
+    decrypted_data_2 = identity_manager.decrypt_data(user_id_2, encrypted_data_2)
+    print(f"Decrypted identity data for {user_id_2}: {decrypted_data_2}")
+
+    # Create and verify a verifiable credential for the second user
+    credential_data_2 = {
+        "degree": "Master of Science",
+        "institution": "Institute of Example",
+        "year": 2024
+    }
+    credential_2 = identity_manager.create_verifiable_credential(user_id_2, credential_data_2)
+    print(f"Created verifiable credential for {user_id_2}: {credential_2}")
+
+    is_valid_2 = identity_manager.verify_credential(credential_2)
+    print(f"Is the credential for {user_id_2} valid? {is_valid_2}")
