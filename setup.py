@@ -16,7 +16,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         'web3==5.24.0',
-        'requests==2.26.0',
+        'requests==2.32.2',
         'pandas==1.3.5',
         'numpy==1.22.2'
     ],
