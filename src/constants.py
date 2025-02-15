@@ -71,7 +71,7 @@ INTEROPERABILITY_PROTOCOL = 'IBC'  # Inter-Blockchain Communication protocol for
 
 # Security features
 ENABLE_MULTI_SIG = True  # Enable multi-signature transactions for added security
-MULTI_SIG _THRESHOLD = 8  # Increased number of signatures required for multi-sig transactions
+MULTI_SIG_THRESHOLD = 8  # Increased number of signatures required for multi-sig transactions
 SECURITY_AUDIT_FREQUENCY = 2  # Increased frequency of security audits in days
 
 # Advanced Network Features
