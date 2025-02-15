@@ -188,7 +188,7 @@ A decentralized, AI-powered financial system for stabilizing the value of Pi Coi
 
 ### Overview
 
-Euler's Shield is a cutting-edge, decentralized financial system designed to stabilize the value of Pi Coin at $314.159. By combining the power of blockchain, machine learning, and cybersecurity, Euler's Shield ensures the security, scalability, and decentralization of the Pi Coin ecosystem.
+Euler's Shield is a cutting-edge, decentralized financial system designed to stabilize the value of Pi Coin at $314159 ( Three hundred fourteen thousand one hundred fifty-nine dollars ). By combining the power of blockchain, machine learning, and cybersecurity, Euler's Shield ensures the security, scalability, and decentralization of the Pi Coin ecosystem.
 
 ### Features
 
