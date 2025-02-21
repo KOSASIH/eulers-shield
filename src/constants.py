@@ -62,9 +62,9 @@ COMPLIANCE_JURISDICTIONS = ["US", "EU", "UK", "SG", "JP", "CA", "AU", "CH", "IN"
 
 # Payment Processing
 INSTANT_TRANSACTION_PROCESSING = True  # Enable instant transaction processing across systems
-TRANSACTION_FEE_USD = 0.0000000001  # Significantly reduced transaction fee in USD
+TRANSACTION_FEE_USD = 0 .0000000001  # Significantly reduced transaction fee in USD
 NETWORK_FEE_ADJUSTMENT = 0.00000000001  # Dynamic adjustment factor for network fees
-SEC URITY_AUDIT_INTERVAL = 180  # Security audit interval in seconds (3 minutes)
+SECURITY_AUDIT_INTERVAL = 180  # Security audit interval in seconds (3 minutes)
 
 # Advanced features
 ENABLE_SMART_CONTRACTS = True  # Enable smart contracts on the blockchain
@@ -115,6 +115,12 @@ UNSTOPPABLE_NETWORK = True  # Ensure the network is resilient against attacks
 QUANTUM_RESISTANT_ENCRYPTION = True  # Implement quantum-resistant cryptographic algorithms
 AI_INTEGRATION = True  # Enable AI-driven analytics and decision-making
 REAL_TIME_COMPLIANCE_MONITORING = True  # Continuous compliance checks in real-time
-MULTI-LAYER_SECURITY_PROTOCOLS = True  # Implement multiple layers of security for transactions
+MULTI_LAYER_SECURITY_PROTOCOLS = True  # Implement multiple layers of security for transactions
+
+# New Connectivity Features for Pi Network Ecosystem
+ENABLE_AUTO_CONNECT = True  # Enable automatic connection to the Pi Network ecosystem
+PI_NETWORK_NODES = ['node1.pi.network', 'node2.pi.network', 'node3.pi.network']  # List of Pi Network nodes for connection
+PEER_DISCOVERY_INTERVAL = 60  # Interval for discovering new peers in seconds
+MAX_PEERS = 100  # Maximum number of peers to connect to in the network
 
 # End of Euler's Shield Constants Module
