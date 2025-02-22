@@ -62,7 +62,7 @@ COMPLIANCE_JURISDICTIONS = ["US", "EU", "UK", "SG", "JP", "CA", "AU", "CH", "IN"
 
 # Payment Processing
 INSTANT_TRANSACTION_PROCESSING = True  # Enable instant transaction processing across systems
-TRANSACTION_FEE_USD = 0 .0000000001  # Significantly reduced transaction fee in USD
+TRANSACTION_FEE_USD = 0.0000000001  # Significantly reduced transaction fee in USD
 NETWORK_FEE_ADJUSTMENT = 0.00000000001  # Dynamic adjustment factor for network fees
 SECURITY_AUDIT_INTERVAL = 180  # Security audit interval in seconds (3 minutes)
 
@@ -119,6 +119,9 @@ MULTI_LAYER_SECURITY_PROTOCOLS = True  # Implement multiple layers of security f
 
 # New Connectivity Features for Pi Network Ecosystem
 ENABLE_AUTO_CONNECT = True  # Enable automatic connection to the Pi Network ecosystem
+PI_NETWORK_API_URL = 'https://minepi.com/api'  # Base API URL for Pi Network
+PI_APPS_API_URL = 'https://minepi.com/api/apps'  # API URL for Pi Apps
+PI_MARKETPLACE_API_URL = 'https://minepi.com/api/marketplace'  # API URL for Pi Marketplace
 PI_NETWORK_NODES = ['node1.pi.network', 'node2.pi.network', 'node3.pi.network']  # List of Pi Network nodes for connection
 PEER_DISCOVERY_INTERVAL = 60  # Interval for discovering new peers in seconds
 MAX_PEERS = 100  # Maximum number of peers to connect to in the network
