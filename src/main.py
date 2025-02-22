@@ -130,4 +130,4 @@ class EulerShieldApp:
 
 if __name__ == "__main__":
     app = EulerShieldApp()
-    app .run()
+    app.run()
