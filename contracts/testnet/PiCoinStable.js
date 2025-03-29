@@ -1,5 +1,3 @@
-// tester/PiCoinStable.js
-
 // Import the Stellar SDK
 const StellarSdk = require('stellar-sdk');
 
