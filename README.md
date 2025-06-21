@@ -1,6 +1,5 @@
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/KOSASIH/eulers-shield/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/KOSASIH/eulers-shield/tree/main)
 [![CodeQL Advanced](https://github.com/KOSASIH/eulers-shield/actions/workflows/codeql.yml/badge.svg)](https://github.com/KOSASIH/eulers-shield/actions/workflows/codeql.yml)
-[![StackHawk](https://github.com/KOSASIH/eulers-shield/actions/workflows/stackhawk.yml/badge.svg)](https://github.com/KOSASIH/eulers-shield/actions/workflows/stackhawk.yml)
 
 [![IMF Approved](https://img.shields.io/badge/IMF-Approved-007bff.svg)](https://www.imf.org)
 [![World Bank Supported](https://img.shields.io/badge/World%20Bank-Supported-009688.svg)](https://www.worldbank.org)
