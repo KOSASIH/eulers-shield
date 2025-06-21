@@ -1,0 +1,43 @@
+[
+    {
+        "inputs": [
+            { "internalType": "string", "name": "_title", "type": "string" },
+            { "internalType": "string", "name": "_description", "type": "string" }
+        ],
+        "name": "createProposal",
+        "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            { "internalType": "uint256", "name": "_id", "type": "uint256" },
+            { "internalType": "string", "name": "_summary", "type": "string" },
+            { "internalType": "string", "name": "_recommendation", "type": "string" }
+        ],
+        "name": "postAISummary",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "uint256", "name": "_id", "type": "uint256" }],
+        "name": "getProposal",
+        "outputs": [
+            { "internalType": "uint256", "name": "id", "type": "uint256" },
+            { "internalType": "address", "name": "proposer", "type": "address" },
+            { "internalType": "string", "name": "title", "type": "string" },
+            { "internalType": "string", "name": "description", "type": "string" },
+            { "internalType": "uint256", "name": "createdAt", "type": "uint256" },
+            { "internalType": "uint256", "name": "votingDeadline", "type": "uint256" },
+            { "internalType": "string", "name": "aiSummary", "type": "string" },
+            { "internalType": "string", "name": "aiRecommendation", "type": "string" },
+            { "internalType": "uint256", "name": "yesVotes", "type": "uint256" },
+            { "internalType": "uint256", "name": "noVotes", "type": "uint256" },
+            { "internalType": "bool", "name": "executed", "type": "bool" },
+            { "internalType": "bool", "name": "aiEvaluated", "type": "bool" }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
